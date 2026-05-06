@@ -1,0 +1,26 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>OBSERVER</title>
+        <link rel="stylesheet" href="title.css">
+    </head>
+    <body>
+        <div id="start">
+            <img src="パスを挿入" alt="読み込み直してください">
+             <button class="start-button">start</button>
+             <p>予想プレイ時間は３～４時間です。</p>
+             <p>ソースコードの閲覧はネタバレにつながります。</p>
+             <p>不具合・バグが見つかり次第、Xアカウント＠nazonosuke314まで連絡してください。</p>
+        </div>
+        <div id="story">
+        </div>
+    </body>
+    <script>
+        const button = document.querySelector(".start-button");
+
+        button.onclick = () => {
+        document.getElementById("start").style.display = "none";
+        document.getElementById("story").style.display = "block";
+         };
+    </script>
+</html>

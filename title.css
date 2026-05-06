@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#start {
+    display: grid;
+    grid-template-rows: 1f auto auto 1f;
+    height: 100vh;
+}
+img {
+    justify-self: center;
+    align-self: center;
+    max-width: 80%;
+}
+.start-button {
+    justify-self: center;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+#start p {
+    justify-self: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}

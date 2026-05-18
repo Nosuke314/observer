@@ -49,14 +49,6 @@
             nextLine();
         });
 
-        //スペースでも進む
-        document.addEventListener("keydown",(e) => {
-            if (e.code === "Space") {
-                e.preventDefault();
-                nextLine();
-            }
-        });
-
         function nextLine() {
             index++;
 

@@ -21,6 +21,7 @@
         button.onclick = () => {
         document.getElementById("start").style.display = "none";
         document.getElementById("story").style.display = "block";
+        }
         //ここまでスタート画面
 
         //セリフの一覧
@@ -29,6 +30,43 @@
             "",
             ""
         ];
-         };
+
+        //セリフの順番カウンター
+        let index = 0;
+
+        //テキスト表示
+        const story = document.getElementById("story");
+
+        function showText() {
+            story.textContent = lines[index];
+        }
+
+        //最初の表示
+        showText();
+
+        //クリックで進む
+        document.addEventListener("click",() => {
+            nextLine();
+        });
+
+        //スペースでも進む
+        document.addEVentListner("keydown",(e) => {
+            if (e.code === "Space") {
+                e.preventDefault();
+                nextLine();
+            }
+        });
+
+        function nextLine() {
+            index++;
+
+            //カウンターが最後まで行ったときにストップ
+            if(index >= lines.length) {
+                index = lines.length - 1;
+                return;
+            }
+
+            showText();
+         }
     </script>
 </html>

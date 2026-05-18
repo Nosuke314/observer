@@ -38,7 +38,17 @@
         const story = document.getElementById("story");
 
         function showText() {
-            story.textContent = lines[index];
+
+            const newLine = document.creatElement("div");
+            newLine.textContent = lines[index];
+
+            newLine.classList.add("line");
+
+            story.appendChild(newLine);
+
+            setTimeout(() => {
+                newLine.classList.add("show");
+            }, 50);
         }
 
         //最初の表示

@@ -25,7 +25,7 @@
         //ここまでスタート画面
 
         //セリフの一覧
-        const lines[
+        const lines = [
             "しりとり",
             "りんご",
             "ごりら"
@@ -50,7 +50,7 @@
         });
 
         //スペースでも進む
-        document.addEVentListner("keydown",(e) => {
+        document.addEventListener("keydown",(e) => {
             if (e.code === "Space") {
                 e.preventDefault();
                 nextLine();

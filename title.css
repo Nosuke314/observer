@@ -29,5 +29,10 @@ img {
     line-height: 1.5;
 }
 #story {
+    opacity: 0;
     text-align: center;
+    color: white;
+}
+#story.show {
+    opacity: 1;
 }

@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+
+    background-image: url("B5617B87-1E02-4AE8-AA24-F3EC91B29929.jpg");
+    background-position: center;
 }
 #start {
     display: grid;

@@ -31,7 +31,7 @@ body {
     cursor: pointer;
     transition:0.3s;
 }
-#start p {
+.wakiyaku p {
     justify-self: center;
     margin-top: 10px;
     font-size: 1.2rem;

@@ -9,7 +9,6 @@ body {
 #start {
     position: relative;
     height: 100vh;
-    color: white;
 }
 #start img {
     position: absolute;
@@ -17,6 +16,14 @@ body {
     align-self: center;
     width: 500px;
     max-width: 80%;
+}
+.wakiyaku {
+    position: abusolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    tezt-align: center;
+    color: white;
 }
 .start-button {
     justify-self: center;

@@ -14,15 +14,16 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%,-50%);
     width: 500px;
     max-width: 80%;
 }
 .wakiyaku {
-    position: abusolute;
+    position: absolute;
     bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
-    tezt-align: center;
+    text-align: center;
     color: white;
 }
 .start-button {

@@ -29,9 +29,9 @@
 
         //セリフの一覧
         const lines = [
-            "しりとり",
-            "りんご",
-            "ごりら"
+            "  ",
+            "、、、",
+            "、、、"
         ];
 
         //セリフの順番カウンター
@@ -69,7 +69,7 @@
 
             //カウンターが最後まで行ったときにストップ
             if(index >= lines.length) {
-                index = lines.length - 1;
+                window.location.href = "stage-select.html"; //ここに遷移先のファイルパスを挿入
                 return;
             }
 

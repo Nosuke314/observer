@@ -19,6 +19,15 @@ body {
     width: auto;
     max-width: 80%;
 }
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50vh;
+    width: auto;
+    max-width: 80%;
+}
 .wakiyaku {
     position: absolute;
     bottom: 6vh;

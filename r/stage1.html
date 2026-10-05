@@ -24,8 +24,24 @@
   </style>
 </head>
 <body>
-  <div class="story">
-   <p>テスト</p>
+  <div class="story-box">
+    
+   <div class="story">
+    <p>テスト</p>
+   </div>
+
+    <div class="story">
+    <p>テスト</p>
+   </div>
+
+    <div class="story">
+    <p>テスト</p>
+   </div>
+
+    <div class="story">
+    <p>テスト</p>
+   </div>
+    
   </div>
 </body>
 <script>
@@ -40,7 +56,9 @@
     index++;
 
     if (index < stories.length) {
-      stories[index].classList.add("active");
+      setTimeout(() => {
+       stories[index].classList.add("active");
+      }, 1000);
     }
   });
 </script>

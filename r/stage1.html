@@ -2,8 +2,34 @@
 <head>
   <meta charset="UTF-8">
   <title>ステージ１</title>
+  <style>
+    .story {
+      display: none;
+    }
+    .story.active {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <p>テスト</p>
+  <div class="story">
+   <p>テスト</p>
+  </div>
 </body>
+<script>
+  const story = document.querySelectorAll(".story")
+  let index = 0;
+
+  stories[index].classList.add("active")
+
+  document.addEventListener("ckick", () => {
+    stories[index].classList.remove("active");
+
+    index++;
+
+    if (index < stories.length) {
+      stories[index].classList.add("active");
+    }
+  });
+</script>
 </html>

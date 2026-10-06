@@ -45,12 +45,12 @@
   </div>
 </body>
 <script>
-  const story = document.querySelectorAll(".story")
+  const stories = document.querySelectorAll(".story")
   let index = 0;
 
   stories[index].classList.add("active")
 
-  document.addEventListener("ckick", () => {
+  document.addEventListener("click", () => {
     stories[index].classList.remove("active");
 
     index++;

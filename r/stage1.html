@@ -73,6 +73,44 @@
 
   stories[index].classList.add("active")
 
+  hunction typeText(element, speed = 50) {
+    const text = element.textContent;
+    element.textContent = "";
+
+    let i = 0;
+
+    const timer = setIntervar(() => {
+      element.textContent += text[i];
+      i++;
+
+      if (i >= text.length) {
+        clearInterval(timer);
+      }
+    }, speed);
+  }
+
+  const stories = document.querySelectorAll(".story");
+  let index = 0;
+
+  //最初のセリフ
+  stories[index].classList.add("active");
+  typeText(stories[index].querySelector("p"));
+
+  document.addEventListener("click", () => {
+    stories[index].classList.remove("active");
+
+    index++;
+
+    if(index < stories.length) {
+      setTimeout(() => {
+        stories[index].classList.add("active");
+        //次のセリフ
+        typeText(stories[index].querySelector("p"));
+
+      }, 1000);
+    }
+  });
+
   document.addEventListener("click", () => {
     stories[index].classList.remove("active");
 

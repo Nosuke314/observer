@@ -68,18 +68,13 @@
   </div>
 </body>
 <script>
-  const stories = document.querySelectorAll(".story")
-  let index = 0;
-
-  stories[index].classList.add("active")
-
-  hunction typeText(element, speed = 50) {
+  function typeText(element, speed = 50) {
     const text = element.textContent;
     element.textContent = "";
 
     let i = 0;
 
-    const timer = setIntervar(() => {
+    const timer = setInterval(() => {
       element.textContent += text[i];
       i++;
 
@@ -107,18 +102,6 @@
         //次のセリフ
         typeText(stories[index].querySelector("p"));
 
-      }, 1000);
-    }
-  });
-
-  document.addEventListener("click", () => {
-    stories[index].classList.remove("active");
-
-    index++;
-    
-    if (index < stories.length) {
-      setTimeout(() => {
-       stories[index].classList.add("active");
       }, 1000);
     }
   });
